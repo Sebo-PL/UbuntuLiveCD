@@ -8,4 +8,4 @@
 # PGP: 0x5CB361E552FB0D10
 # M: +48.728454130
 #
-
+sudo apt-get install syslinux squashfs-tools genisoimage
