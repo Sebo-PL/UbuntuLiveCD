@@ -1,0 +1,27 @@
+************************************************************************
+Ubuntu 14.04.3 LTS trusty i386 Server Online Rescure CD 2015-10-26 19:58
+
+ Enter:  `check`   - to check the CD for defects
+         `hd`      - to boot from the first hard disk
+        *`live`    - to start the rescure system
+         `memtest` - to start memtest86+
+
+The system if connected to the internet would be globally accessible as:
+
+                      root@ampvslp3mpp6ngul.onion
+2048 c7:25:99:0d:28:e4:5c:fc:61:7f:a3:de:63:b5:9d:fa r*@ampvslp3mpp6ngul
+
+by anyone in possesion of:
+3072 ca:99:b1:f6:e4:1e:e4:ea:05:87:3c:74:68:70:37:ed s*@UbuntuTrusty-VBX
+3072 70:ca:ad:97:85:aa:10:55:0f:7a:7d:9d:11:be:9c:dd s*@C6833
+       +--[ RSA 3072]----++--[ RSA 2048]----++--[ RSA 3072]----+
+       |    . . o.       ||     ......      ||      o     o.   |
+       |     o o ..      ||     o..o o=     ||     o +   o o   |
+       |      + ..       ||      o. o+oo    ||    o o + . +    |
+       |     + o  E      ||         ..o. o  ||   . o = o . + . |
+       |      * S        ||        S o  o . ||  .   o S . + . E|
+       |     . %         ||         .  .   .||   .   o o       |
+       |      B =        ||           . . .+||  .   o o        |
+       |     . * .       ||            . +o.||   . . .         |
+       |     .o.+        ||             ooE ||    .            |
+       +-----------------++-----------------++-----------------+
