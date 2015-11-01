@@ -60,11 +60,11 @@ cp -v /usr/lib/syslinux/isolinux.bin img/isolinux/
 cp -v /boot/memtest86+.bin img/install/memtest
 printf "\x18" > img/isolinux/isolinux.txt
 echo "splash.rle" >> img/isolinux/isolinux.txt
-[ -r src/isolinux.txt ] && cat src/isolinux.txt >> img/isolinux/isolinux.txt
+[ -r src/img/isolinux/isolinux.txt ] && cat src/img/isolinux/isolinux.txt >> img/isolinux/isolinux.txt
 [ -r src/splash.bmp ] && {
  bmptoppm splash.bmp | ppmtolss16 '#ffffff=7' > splash.rle
 }
-cat src/isolinux.cfg > img/isolinux/isolinux.cfg
+cat src/img/isolinux/isolinux.cfg > img/isolinux/isolinux.cfg
 sudo chroot "$CHR" dpkg-query -W --showformat='${Package} ${Version}\n' | sudo tee img/casper/filesystem.manifest
 sudo cp -v img/casper/filesystem.manifest img/casper/filesystem.manifest-desktop
 for i in ubiquity ubiquity-frontend-gtk ubiquity-frontend-kde casper lupin-casper live-initramfs user-setup discover1 xresprobe os-prober libdebian-installer4
@@ -73,7 +73,7 @@ for i in ubiquity ubiquity-frontend-gtk ubiquity-frontend-kde casper lupin-caspe
 done
 sudo mksquashfs "$CHR" img/casper/filesystem.squashfs
 printf $(sudo du -sx --block-size=1 chr | cut -f1) > img/casper/filesystem.size
-cat src/README.diskdefines > img/README.diskdefines
+cat src/img/README.diskdefines > img/README.diskdefines
 echo -n "" > img/ubuntu
 mkdir -p img/.disk
 echo -n "" > img/.disk/base_installable
