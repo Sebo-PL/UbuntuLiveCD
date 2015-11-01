@@ -9,3 +9,6 @@
 # M: +48.728454130
 #
 sudo apt-get install syslinux squashfs-tools genisoimage
+sudo apt-get install netpbm
+sudo apt-get install fakeroot
+sudo apt-get install fakechroot
